@@ -13,7 +13,7 @@
         <?php
         $title = "Turning Green";
         $artist = "Maki";
-        $mood = "5"; // string for type juggling
+        $mood = "5"; 
 
         // Numeric variables
         $verseCount = 3;
@@ -50,7 +50,7 @@ Yeah, I {$verbs[13]} some {$nouns[8]}"
         echo "<div class='song-title'>$title</div>";
         echo "<div class='artist-name'>$artist</div>";
 
-        $moodLevel = $mood + 2; // type juggling
+        $moodLevel = $mood + 2; 
         echo "<div class='mood-level'>Mood Level: $moodLevel (original mood: '$mood')</div>";
 
         // Lyrics
