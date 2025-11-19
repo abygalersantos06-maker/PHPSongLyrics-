@@ -1,31 +1,27 @@
-/* General Page Style - "Turning Green" Inspired */
+/* General Page Style */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #e6f2e6, #cce6cc); /* soft green gradient */
+    background: #e6f2e6; /* soft green */
     color: #1b3d1b;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
 }
 
+/* Container for album and lyrics */
 .container {
     display: flex;
-    flex-direction: row;
     max-width: 900px;
-    margin: 40px 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Album cover on the left */
+/* Album cover */
 .album-header {
     flex: 0 0 250px;
-    background: #d9f0d9; /* slightly darker soft green */
+    background: #d9f0d9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,51 +30,41 @@ body {
 
 .album-header img {
     width: 200px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(34,139,34,0.4); /* soft green shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.album-header img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(34,139,34,0.6);
+    border-radius: 10px;
 }
 
 /* Lyrics section */
 .lyrics {
     flex: 1;
-    padding: 30px 40px;
-    overflow-y: auto;
+    padding: 20px 30px;
 }
 
 .song-title {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
-    margin: 0;
-    color: #2e7d2e; /* darker green for the title */
+    margin-bottom: 5px;
+    color: #2e7d2e;
 }
 
 .artist-name {
-    font-size: 1.2em;
-    margin: 5px 0 20px 0;
-    color: #4d994d; /* lighter green */
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #4d994d;
 }
 
 .mood-level {
-    font-size: 1em;
+    font-size: 0.95em;
     margin-bottom: 20px;
-    color: #267326;
 }
 
+/* Headings and text */
 h4 {
-    margin: 20px 0 10px 0;
-    color: #145214; /* deep green headings */
+    margin-top: 15px;
+    color: #145214;
 }
 
 p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #1b3d1b;
+    line-height: 1.5;
 }
 
 .chorus {
@@ -89,18 +75,4 @@ p {
 .prechorus {
     font-style: italic;
     color: #267326;
-}
-
-/* Scrollbar style */
-.lyrics::-webkit-scrollbar {
-    width: 8px;
-}
-
-.lyrics::-webkit-scrollbar-thumb {
-    background-color: #145214;
-    border-radius: 4px;
-}
-
-.lyrics::-webkit-scrollbar-track {
-    background-color: #d9f0d9;
 }
